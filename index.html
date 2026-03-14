@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rëstørē | Web3 Developer & Community Builder</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #007bff;
+            --dark: #1a1a1a;
+            --light: #f8f9fa;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            background: var(--light);
+            color: #333;
+            line-height: 1.6;
+        }
+        header {
+            background: linear-gradient(135deg, var(--primary), #0056b3);
+            color: white;
+            text-align: center;
+            padding: 80px 20px 60px;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 3rem;
+        }
+        .container {
+            max-width: 1100px;
+            margin: -40px auto 0;
+            padding: 0 20px;
+        }
+        .profile-card {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.12);
+            padding: 40px;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .profile-img {
+            width: 160px;
+            height: 160px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 6px solid var(--primary);
+            margin-bottom: 20px;
+        }
+        section {
+            margin-bottom: 60px;
+        }
+        h2 {
+            color: var(--primary);
+            border-bottom: 3px solid var(--primary);
+            display: inline-block;
+            padding-bottom: 8px;
+            margin-bottom: 24px;
+        }
+        .repos-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 24px;
+        }
+        .repo-card {
+            background: white;
+            border-radius: 10px;
+            padding: 24px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .repo-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+        }
+        .repo-card h3 {
+            margin: 0 0 12px;
+            color: #222;
+        }
+        .repo-card p {
+            color: #555;
+            margin: 0 0 16px;
+        }
+        .links a {
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 600;
+            margin-right: 20px;
+        }
+        .links a:hover {
+            text-decoration: underline;
+        }
+        footer {
+            background: var(--dark);
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 60px;
+        }
+        @media (max-width: 768px) {
+            header h1 { font-size: 2.4rem; }
+            .profile-card { padding: 30px; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Rëstørē</h1>
+        <p>Web3 Marketer • Developer • Community Builder</p>
+        <p>@Sha_dowP</p>
+    </header>
+
+    <div class="container">
+        <div class="profile-card">
+            <img 
+                src="https://pbs.twimg.com/profile_images/2027701299647496192/cajz20lD.jpg" 
+                alt="Rëstørē Profile Picture" 
+                class="profile-img">
+            <h2>About Me</h2>
+            <p>I'm a passionate Web3 enthusiast based in Nigeria, focused on development, marketing, and building thriving communities in the blockchain space. I create, contribute, and connect — helping projects grow while shipping real value.</p>
+        </div>
+
+        <section id="github">
+            <h2>GitHub Projects</h2>
+            <p>Showcasing some of my open-source work and experiments in Web3, blockchain tools, and development. (Replace placeholders with your actual repos!)</p>
+            
+            <div class="repos-grid">
+                <div class="repo-card">
+                    <h3>web3-portfolio</h3>
+                    <p>My personal portfolio site built with HTML/CSS/JS — now live and evolving.</p>
+                    <div class="links">
+                        <a href="https://github.com/YOUR_GITHUB_USERNAME/web3-portfolio" target="_blank"><i class="fab fa-github"></i> View Repo</a>
+                    </div>
+                </div>
+
+                <div class="repo-card">
+                    <h3>thought-network-tools</h3>
+                    <p>Scripts, explorers, and utilities related to Thought Network and similar chains.</p>
+                    <div class="links">
+                        <a href="https://github.com/YOUR_GITHUB_USERNAME/thought-network-tools" target="_blank"><i class="fab fa-github"></i> View Repo</a>
+                    </div>
+                </div>
+
+                <div class="repo-card">
+                    <h3>community-dashboard</h3>
+                    <p>Simple dashboard for tracking Web3 community engagement metrics.</p>
+                    <div class="links">
+                        <a href="https://github.com/YOUR_GITHUB_USERNAME/community-dashboard" target="_blank"><i class="fab fa-github"></i> View Repo</a>
+                    </div>
+                </div>
+            </div>
+
+            <p style="margin-top: 30px; text-align: center;">
+                <strong>Find all my projects here:</strong><br>
+                <a href="https://github.com/YOUR_GITHUB_USERNAME" target="_blank" style="font-size: 1.2rem; color: var(--primary);">
+                    <i class="fab fa-github"></i> github.com/YOUR_GITHUB_USERNAME
+                </a>
+            </p>
+        </section>
+
+        <section id="contact">
+            <h2>Get in Touch</h2>
+            <p>Building something cool in Web3? Let's connect!</p>
+            <div class="links" style="font-size: 1.1rem;">
+                <a href="https://x.com/Sha_dowP" target="_blank"><i class="fab fa-x-twitter"></i> @Sha_dowP</a>
+                <a href="mailto:your.email@example.com"><i class="fas fa-envelope"></i> Email</a>
+                <!-- Add LinkedIn, Discord, etc. if you have them -->
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>© 2026 Rëstørē • Made with passion in Web3</p>
+    </footer>
+</body>
+  </html>
